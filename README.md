@@ -52,6 +52,8 @@
 - config - a midi music device has a static midi implementation
   - For Ventris e.g. midi CC# 1 always corresponds to Reverb Engine A 
   - For Ventris e.g. midi CC# 1 has a range of values from 0-13
+  - Some value ranges simply adjust an effects level e.g. 0-127 less to more reverberation
+  - Some value ranges adjust a parameter e.g. 0-13 selects completely different reverb engines from the 14 available
 - state - a midi music device has a value set for each CC#
   - For Ventris e.g. set value for CC# 1 to 0 - sets Reverb Engine A to 'room' engine
 - data solutions
@@ -59,6 +61,7 @@
   - state - sql database
 
 ### Data model
+Storage Considerations
 - appsettings for config?
   - simple to update via ide/PR
   - can be a large amount of config i.e. large json entries
@@ -66,6 +69,48 @@
 - sql for config
   - must query/update a live db to view/insert data
   - simplifies and consolidates data access layer to interacting with sql via stored procedures
+
+Models
+- EffectsLoops - a group of effects combined into a loop
+  - ID
+  - Name - e.g. VentrisSingleEngine
+  - Description
+
+- MidiMusicDevices - a device configurable via midi that can add a music effect
+  - ID
+  - Name - e.g. VentrisDualReverbEngineA
+  - Description
+
+- EffectsLoopMidiDevices - midi devices in each loop
+  - ID
+  - EffectsLoopID
+  - MidiMusicDeviceID
+
+- ParameterTypes - the type of parameter that can be set for a midi music device
+  - ID
+  - Name - e.g. Selector, level
+  - Description
+
+- Effects - effects details and state as well as the device that can create them
+  - ID
+  - MidiMusicDeviceId
+  - EffectsDetailsID
+  - CcChannel
+  - CcNumber
+  - CcValueMin
+  - CcValueMax
+  - CcValue
+  - ParameterTypeID - e.g. selector vs level
+
+- EffectDetails - some effects are the same across midi devices
+  - ID
+  - Name
+  - Description
+
+- EngineParameters - effects particular to a Reverb Engine e.g. Distortion level for lo-fi engine
+  - ID
+  - ReverbEffectID - e.g. ID for Lo-Fi effect
+  - EffectID - e.g. ID for Distortion effect
 
 ## Midi music devices
 - the Ventris dual reverb
