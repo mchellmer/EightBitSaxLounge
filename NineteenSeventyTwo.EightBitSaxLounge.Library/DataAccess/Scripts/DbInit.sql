@@ -1,5 +1,6 @@
 -- Drop existing tables in the correct order
 IF OBJECT_ID('EngineParameters', 'U') IS NOT NULL DROP TABLE EngineParameters;
+IF OBJECT_ID('EffectSelections', 'U') IS NOT NULL DROP TABLE EffectSelections;
 IF OBJECT_ID('EffectsLoopMidiDevices', 'U') IS NOT NULL DROP TABLE EffectsLoopMidiDevices;
 IF OBJECT_ID('Effects', 'U') IS NOT NULL DROP TABLE Effects;
 IF OBJECT_ID('EffectDetails', 'U') IS NOT NULL DROP TABLE EffectDetails;
@@ -59,6 +60,16 @@ CREATE TABLE Effects (
                          FOREIGN KEY (MidiMusicDeviceId) REFERENCES MidiMusicDevices(ID),
                          FOREIGN KEY (EffectsDetailsID) REFERENCES EffectDetails(ID),
                          FOREIGN KEY (ParameterType) REFERENCES ParameterTypes(ID)
+);
+GO
+
+CREATE TABLE EffectSelections (
+                                  ID INT PRIMARY KEY,
+                                  ReverbEngineEffectID INT NOT NULL,
+                                  EffectDetailsID INT NOT NULL,
+                                  SelectorCcValue INT NOT NULL,
+                                  FOREIGN KEY (ReverbEngineEffectID) REFERENCES Effects(ID),
+                                  FOREIGN KEY (EffectDetailsID) REFERENCES EffectDetails(ID)
 );
 GO
 

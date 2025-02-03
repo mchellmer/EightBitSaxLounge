@@ -13,8 +13,8 @@ VALUES (1, 1, 1);
 -- Insert test values into EffectDetails
 INSERT INTO EffectDetails (ID, Name, Description)
 VALUES 
-(1, 'EngineA', 'One of two reverb engines available on the Ventris Dual Reverb'),
-(2, 'Room', 'A reverb effect that simulates a playing in standard room-sized space'),
+(1, 'EngineA', 'One of two reverb engines available on the Ventris Dual Reverb.'),
+(2, 'Room', 'A reverb effect that simulates a playing in a standard room-sized space.'),
 (3, 'PreDelayFeedbackHighCut', 'Sets the pre-delay feedback high cutoff frequency.');
 
 -- Insert test values into ParameterTypes
@@ -26,6 +26,10 @@ VALUES (1, 'selector', 'The effect parameter value has several unrelated options
 INSERT INTO Effects (ID, MidiMusicDeviceId, EffectsDetailsID, CcChannel, CcNumber, CcValueMin, CcValueMax, CcValue, ParameterType)
 VALUES (1, 1, 1, 1, 1, 0, 13, 0, 1),
        (2, 1, 3, 1, 15, 0, 127, 0, 2);
+
+-- Insert test values into EffectSelections - links EngineA CcValue 0 sets the reverb effect to Room
+INSERT INTO EffectSelections (ID, ReverbEngineEffectID, EffectDetailsID, SelectorCcValue)
+VALUES (1, 1, 2, 0);
 
 -- Insert test values into EngineParameters - links Engine Parameter 1 to Engine A
 INSERT INTO EngineParameters (ID, ReverbEngineEffectID, EngineParameterEffectID)

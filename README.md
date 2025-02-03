@@ -107,10 +107,25 @@ Models
   - Name
   - Description
 
+- EffectSelections - the possible values for a selector parameter
+  - ID
+  - EffectID
+  - EffectDetailsID
+  - CcValue
+
+- EffectDetails - some effects are the same across midi devices
+  - ID
+  - Name
+  - Description
+
 - EngineParameters - effects particular to a Reverb Engine e.g. Distortion level for lo-fi engine
   - ID
   - ReverbEffectID - e.g. ID for Lo-Fi effect
   - EffectID - e.g. ID for Distortion effect
+
+StoredProcedures
+- GetCcMessageDetailsForSelectorEffect
+  - given device, effect, selector value; return cc channel, number, value required
 
 ## Midi music devices
 - the Ventris dual reverb
