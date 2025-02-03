@@ -1,0 +1,12 @@
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\bin\Debug\net8.0\NineteenSeventyTwo.EightBitSaxLounge.Library.deps.json
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\bin\Debug\net8.0\NineteenSeventyTwo.EightBitSaxLounge.Library.dll
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\bin\Debug\net8.0\NineteenSeventyTwo.EightBitSaxLounge.Library.pdb
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\obj\Debug\net8.0\NineteenSeventyTwo.EightBitSaxLounge.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\obj\Debug\net8.0\NineteenSeventyTwo.EightBitSaxLounge.Library.AssemblyInfoInputs.cache
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\obj\Debug\net8.0\NineteenSeventyTwo.EightBitSaxLounge.Library.AssemblyInfo.cs
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\obj\Debug\net8.0\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj.CoreCompileInputs.cache
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\obj\Debug\net8.0\NineteenSeventyTwo.EightBitSaxLounge.Library.sourcelink.json
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\obj\Debug\net8.0\NineteenSeventyTwo.EightBitSaxLounge.Library.dll
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\obj\Debug\net8.0\refint\NineteenSeventyTwo.EightBitSaxLounge.Library.dll
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\obj\Debug\net8.0\NineteenSeventyTwo.EightBitSaxLounge.Library.pdb
+C:\Users\mchel\RiderProjects\EightBitSaxLounge\EightBitSaxLounge\NineteenSeventyTwo.EightBitSaxLounge.Library\obj\Debug\net8.0\ref\NineteenSeventyTwo.EightBitSaxLounge.Library.dll

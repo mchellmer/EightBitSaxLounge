@@ -6,7 +6,38 @@ namespace NineteenSeventyTwo.EightBitSaxLounge.Library.MidiControl;
 
 public class WinmmMidiPort
 {
+    /// <summary>
+    /// Get MIDI devices available output devices available on the system.
+    /// </summary>
+    /// <returns>
+    /// An ArrayList of MIDI output devices.
+    /// </returns>
+    public static List<MidiOutDevice> GetMidiOutputDevices()
+    {
+        var midiOutDevices = new List<MidiOutDevice>();
 
+        UInt32 numDevs = midiOutGetNumDevs();
+        if (numDevs > 0)
+        {
+            MidiOutCaps outCaps = new MidiOutCaps();
+            for (UInt32 dev = 0; dev < numDevs; ++dev)
+            {
+                MmResult res = midiOutGetDevCapsA(dev, ref outCaps, (UInt32)Marshal.SizeOf(outCaps));
+                if (res == MmResult.NoError)
+                {
+                    MidiOutDevice outDev = new MidiOutDevice
+                    {
+                        DeviceId = dev,
+                        DeviceName = outCaps.deviceName,
+                    };
+                    midiOutDevices.Add(outDev);
+                }
+            }
+        }
+        
+        return midiOutDevices;
+    }
+    
     /// <summary>
     /// Retrieves the capabilities of a specified MIDI output device.
     /// </summary>
@@ -33,31 +64,4 @@ public class WinmmMidiPort
     /// </remarks>
     [DllImport("winmm.dll")]
     private static extern UInt32 midiOutGetNumDevs();
-    
-    /// <summary>
-    /// Get MIDI devices available output devices available on the system.
-    /// </summary>
-    private static void GetMidiOutputDevices()
-    {
-        ArrayList midiOutDevices = new ArrayList();
-
-        UInt32 numDevs = midiOutGetNumDevs();
-        if (numDevs > 0)
-        {
-            MidiOutCaps outCaps = new MidiOutCaps();
-            for (UInt32 dev = 0; dev < numDevs; ++dev)
-            {
-                MmResult res = midiOutGetDevCapsA(dev, ref outCaps, (UInt32)Marshal.SizeOf(outCaps));
-                if (res == MmResult.NoError)
-                {
-                    MidiOutDevice outDev = new MidiOutDevice
-                    {
-                        DeviceId = dev,
-                        DeviceName = outCaps.deviceName,
-                    };
-                    midiOutDevices.Add(outDev);
-                }
-            }
-        }
-    }
 }
