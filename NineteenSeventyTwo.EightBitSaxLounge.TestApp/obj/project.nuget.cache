@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E/ANw3A/an8=",
+  "dgSpecHash": "WLn+/0T0se0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
+  "projectFilePath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.TestApp\\NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mchel\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\mchel\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

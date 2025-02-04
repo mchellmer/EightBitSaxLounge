@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NineteenSeventyTwo.EightBitSaxLounge.Library", "NineteenSeventyTwo.EightBitSaxLounge.Library\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj", "{84B92696-E896-47DD-8977-DC6776BC16C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EightBitSaxLounge.TestApp", "EightBitSaxLounge.TestApp\EightBitSaxLounge.TestApp.csproj", "{653C596F-7E51-4C69-8DEB-91604561E152}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NineteenSeventyTwo.EightBitSaxLounge.TestApp", "NineteenSeventyTwo.EightBitSaxLounge.TestApp\NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj", "{653C596F-7E51-4C69-8DEB-91604561E152}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -737,6 +737,22 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "NineteenSeventyTwo.EightBitSaxLounge.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Dapper": "2.1.35",
+          "Microsoft.Data.SqlClient": "5.2.2",
+          "Microsoft.Extensions.Configuration": "9.0.1",
+          "Microsoft.Extensions.Logging": "9.0.1"
+        },
+        "compile": {
+          "bin/placeholder/NineteenSeventyTwo.EightBitSaxLounge.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NineteenSeventyTwo.EightBitSaxLounge.Library.dll": {}
+        }
       }
     }
   },
@@ -2124,14 +2140,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "NineteenSeventyTwo.EightBitSaxLounge.Library/1.0.0": {
+      "type": "project",
+      "path": "../NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
+      "msbuildProject": "../NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Dapper >= 2.1.35",
-      "Microsoft.Data.SqlClient >= 5.2.2",
-      "Microsoft.Extensions.Configuration >= 9.0.1",
-      "Microsoft.Extensions.Logging >= 9.0.1"
+      "NineteenSeventyTwo.EightBitSaxLounge.Library >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2141,11 +2159,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
-      "projectName": "NineteenSeventyTwo.EightBitSaxLounge.Library",
-      "projectPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
+      "projectUniqueName": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.TestApp\\NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj",
+      "projectName": "NineteenSeventyTwo.EightBitSaxLounge.TestApp",
+      "projectPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.TestApp\\NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj",
       "packagesPath": "C:\\Users\\mchel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\obj\\",
+      "outputPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.TestApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2165,7 +2183,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj": {
+              "projectPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2182,24 +2204,6 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
-        "dependencies": {
-          "Dapper": {
-            "target": "Package",
-            "version": "[2.1.35, )"
-          },
-          "Microsoft.Data.SqlClient": {
-            "target": "Package",
-            "version": "[5.2.2, )"
-          },
-          "Microsoft.Extensions.Configuration": {
-            "target": "Package",
-            "version": "[9.0.1, )"
-          },
-          "Microsoft.Extensions.Logging": {
-            "target": "Package",
-            "version": "[9.0.1, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
