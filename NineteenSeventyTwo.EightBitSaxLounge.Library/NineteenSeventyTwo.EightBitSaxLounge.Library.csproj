@@ -8,10 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="DataAccess\Scripts\" />
-    </ItemGroup>
-
-    <ItemGroup>
         <PackageReference Include="Dapper" Version="2.1.35" />
         <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
         <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.1" />

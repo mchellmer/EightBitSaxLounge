@@ -19,7 +19,7 @@ BEGIN
         dbo.EffectDetails ED2 ON ES.EffectDetailsID = ED2.ID
     WHERE
         ED1.Name = @EffectName
-      AND EF.MidiMusicDeviceId = (SELECT ID FROM MidiMusicDevices WHERE Name = @MidiDeviceName)
+      AND EF.MidiMusicDeviceID = (SELECT ID FROM MidiMusicDevices WHERE Name = @MidiDeviceName)
       AND ED2.Name = @EffectValue;
 
     -- Update the CcValue in the Effects table
@@ -27,6 +27,6 @@ BEGIN
     SET CcValue = @SelectorCcValue
     WHERE
         EffectsDetailsID = (SELECT ID FROM EffectDetails WHERE Name = @EffectName)
-      AND MidiMusicDeviceId = (SELECT ID FROM MidiMusicDevices WHERE Name = @MidiDeviceName);
+      AND MidiMusicDeviceID = (SELECT ID FROM MidiMusicDevices WHERE Name = @MidiDeviceName);
 END
 GO

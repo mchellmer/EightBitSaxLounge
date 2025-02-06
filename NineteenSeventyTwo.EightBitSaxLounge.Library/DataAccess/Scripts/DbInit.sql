@@ -1,11 +1,12 @@
 -- Drop existing tables in the correct order
-IF OBJECT_ID('EngineParameters', 'U') IS NOT NULL DROP TABLE EngineParameters;
-IF OBJECT_ID('EffectSelections', 'U') IS NOT NULL DROP TABLE EffectSelections;
-IF OBJECT_ID('EffectsLoopMidiDevices', 'U') IS NOT NULL DROP TABLE EffectsLoopMidiDevices;
-IF OBJECT_ID('Effects', 'U') IS NOT NULL DROP TABLE Effects;
+IF OBJECT_ID('MidiEffectSettingSettingss', 'U') IS NOT NULL DROP TABLE MidiEffectSettingSettingss;
+IF OBJECT_ID('MidiEffectSettings', 'U') IS NOT NULL DROP TABLE MidiEffectSettings;
+IF OBJECT_ID('MidiEffectModes', 'U') IS NOT NULL DROP TABLE MidiEffectModes;
+IF OBJECT_ID('MidiEffects', 'U') IS NOT NULL DROP TABLE MidiEffects;
+IF OBJECT_ID('MidiCcValueTypes', 'U') IS NOT NULL DROP TABLE MidiCcValueTypes;
 IF OBJECT_ID('EffectDetails', 'U') IS NOT NULL DROP TABLE EffectDetails;
-IF OBJECT_ID('ParameterTypes', 'U') IS NOT NULL DROP TABLE ParameterTypes;
-IF OBJECT_ID('MidiMusicDevices', 'U') IS NOT NULL DROP TABLE MidiMusicDevices;
+IF OBJECT_ID('EffectsLoopDevices', 'U') IS NOT NULL DROP TABLE EffectsLoopDevices;
+IF OBJECT_ID('MusicDevices', 'U') IS NOT NULL DROP TABLE MusicDevices;
 IF OBJECT_ID('EffectsLoops', 'U') IS NOT NULL DROP TABLE EffectsLoops;
 GO
 
@@ -17,19 +18,19 @@ CREATE TABLE EffectsLoops (
 );
 GO
 
-CREATE TABLE MidiMusicDevices (
+CREATE TABLE MusicDevices (
                                   ID INT PRIMARY KEY,
                                   Name VARCHAR(255) NOT NULL,
                                   Description VARCHAR(MAX) NOT NULL
 );
 GO
 
-CREATE TABLE EffectsLoopMidiDevices (
+CREATE TABLE EffectsLoopDevices (
                                         ID INT PRIMARY KEY,
                                         EffectsLoopID INT NOT NULL,
-                                        MidiMusicDeviceID INT NOT NULL,
+                                        MusicDeviceID INT,
                                         FOREIGN KEY (EffectsLoopID) REFERENCES EffectsLoops(ID),
-                                        FOREIGN KEY (MidiMusicDeviceID) REFERENCES MidiMusicDevices(ID)
+                                        FOREIGN KEY (MusicDeviceID) REFERENCES MusicDevices(ID)
 );
 GO
 
@@ -40,44 +41,53 @@ CREATE TABLE EffectDetails (
 );
 GO
 
-CREATE TABLE ParameterTypes (
+CREATE TABLE MidiCcValueTypes (
                                 ID INT PRIMARY KEY,
                                 Name VARCHAR(255) NOT NULL,
                                 Description VARCHAR(MAX) NOT NULL
 );
 GO
 
-CREATE TABLE Effects (
+CREATE TABLE MidiEffects (
                          ID INT PRIMARY KEY,
-                         MidiMusicDeviceId INT NOT NULL,
+                         MusicDeviceID INT NOT NULL,
                          EffectsDetailsID INT NOT NULL,
+                         MidiCcValueTypeID INT NOT NULL,
                          CcChannel INT NOT NULL,
                          CcNumber INT NOT NULL,
                          CcValueMin INT NOT NULL,
                          CcValueMax INT NOT NULL,
-                         CcValue INT NOT NULL,
-                         ParameterType INT NOT NULL,
-                         FOREIGN KEY (MidiMusicDeviceId) REFERENCES MidiMusicDevices(ID),
+                         CcValue INT NOT NULL
+                         FOREIGN KEY (MusicDeviceID) REFERENCES MusicDevices(ID),
                          FOREIGN KEY (EffectsDetailsID) REFERENCES EffectDetails(ID),
-                         FOREIGN KEY (ParameterType) REFERENCES ParameterTypes(ID)
+                         FOREIGN KEY (MidiCcValueTypeID) REFERENCES MidiCcValueTypes(ID)
 );
 GO
 
-CREATE TABLE EffectSelections (
+CREATE TABLE MidiEffectModes (
                                   ID INT PRIMARY KEY,
-                                  ReverbEngineEffectID INT NOT NULL,
+                                  MidiEffectID INT NOT NULL,
                                   EffectDetailsID INT NOT NULL,
                                   SelectorCcValue INT NOT NULL,
-                                  FOREIGN KEY (ReverbEngineEffectID) REFERENCES Effects(ID),
+                                  FOREIGN KEY (MidiEffectID) REFERENCES MidiEffects(ID),
                                   FOREIGN KEY (EffectDetailsID) REFERENCES EffectDetails(ID)
 );
 GO
 
-CREATE TABLE EngineParameters (
+CREATE TABLE MidiEffectSettings (
                                   ID INT PRIMARY KEY,
-                                  ReverbEngineEffectID INT NOT NULL,
-                                  EngineParameterEffectID INT NOT NULL,
-                                  FOREIGN KEY (ReverbEngineEffectID) REFERENCES Effects(ID),
-                                  FOREIGN KEY (EngineParameterEffectID) REFERENCES Effects(ID)
+                                  MidiEffectID INT NOT NULL,
+                                  MidiEffectSettingEffectID INT NOT NULL,
+                                  FOREIGN KEY (MidiEffectID) REFERENCES MidiEffects(ID),
+                                  FOREIGN KEY (MidiEffectSettingEffectID) REFERENCES MidiEffects(ID)
+);
+GO
+
+CREATE TABLE MidiEffectSettingSettingss (
+                                    ID INT PRIMARY KEY,
+                                    MidiSettingEffectID INT NOT NULL,
+                                    EffectDetailsID INT NOT NULL,
+                                    FOREIGN KEY (MidiSettingEffectID) REFERENCES MidiEffects(ID),
+                                    FOREIGN KEY (EffectDetailsID) REFERENCES EffectDetails(ID)
 );
 GO

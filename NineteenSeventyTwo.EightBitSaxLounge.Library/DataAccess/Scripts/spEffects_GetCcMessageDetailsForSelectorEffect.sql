@@ -18,7 +18,7 @@ BEGIN
         dbo.EffectDetails ED2 ON ES.EffectDetailsID = ED2.ID
     WHERE
         ED1.Name = @EffectName
-      AND EF.MidiMusicDeviceId = (SELECT ID FROM MidiMusicDevices WHERE Name = @MidiDeviceName)
+      AND EF.MidiMusicDeviceID = (SELECT ID FROM MidiMusicDevices WHERE Name = @MidiDeviceName)
       AND ED2.Name = @EffectValue;
 END
 GO
