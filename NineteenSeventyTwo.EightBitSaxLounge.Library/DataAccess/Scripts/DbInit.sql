@@ -12,21 +12,21 @@ GO
 
 -- Create new tables
 CREATE TABLE EffectsLoops (
-                              ID INT PRIMARY KEY,
+                              ID INT PRIMARY KEY IDENTITY(1,1), -- ensure unique ID, start fron 1, increment by 1
                               Name VARCHAR(255) NOT NULL,
                               Description VARCHAR(MAX) NOT NULL
 );
 GO
 
 CREATE TABLE MusicDevices (
-                                  ID INT PRIMARY KEY,
+                                  ID INT PRIMARY KEY IDENTITY(1,1),
                                   Name VARCHAR(255) NOT NULL,
                                   Description VARCHAR(MAX) NOT NULL
 );
 GO
 
 CREATE TABLE EffectsLoopDevices (
-                                        ID INT PRIMARY KEY,
+                                        ID INT PRIMARY KEY IDENTITY(1,1),
                                         EffectsLoopID INT NOT NULL,
                                         MusicDeviceID INT,
                                         FOREIGN KEY (EffectsLoopID) REFERENCES EffectsLoops(ID),
@@ -35,21 +35,21 @@ CREATE TABLE EffectsLoopDevices (
 GO
 
 CREATE TABLE EffectDetails (
-                               ID INT PRIMARY KEY,
+                               ID INT PRIMARY KEY IDENTITY(1,1),
                                Name VARCHAR(255) NOT NULL,
                                Description VARCHAR(MAX) NOT NULL
 );
 GO
 
 CREATE TABLE MidiCcValueTypes (
-                                ID INT PRIMARY KEY,
+                                ID INT PRIMARY KEY IDENTITY(1,1),
                                 Name VARCHAR(255) NOT NULL,
                                 Description VARCHAR(MAX) NOT NULL
 );
 GO
 
 CREATE TABLE MidiEffects (
-                         ID INT PRIMARY KEY,
+                         ID INT PRIMARY KEY IDENTITY(1,1),
                          MusicDeviceID INT NOT NULL,
                          EffectsDetailsID INT NOT NULL,
                          MidiCcValueTypeID INT NOT NULL,
@@ -65,7 +65,7 @@ CREATE TABLE MidiEffects (
 GO
 
 CREATE TABLE MidiEffectModes (
-                                  ID INT PRIMARY KEY,
+                                  ID INT PRIMARY KEY IDENTITY(1,1),
                                   MidiEffectID INT NOT NULL,
                                   EffectDetailsID INT NOT NULL,
                                   SelectorCcValue INT NOT NULL,
@@ -75,7 +75,7 @@ CREATE TABLE MidiEffectModes (
 GO
 
 CREATE TABLE MidiEffectSettings (
-                                  ID INT PRIMARY KEY,
+                                  ID INT PRIMARY KEY IDENTITY(1,1),
                                   MidiEffectID INT NOT NULL,
                                   MidiEffectSettingEffectID INT NOT NULL,
                                   FOREIGN KEY (MidiEffectID) REFERENCES MidiEffects(ID),
@@ -84,7 +84,7 @@ CREATE TABLE MidiEffectSettings (
 GO
 
 CREATE TABLE MidiEffectSettingSettingss (
-                                    ID INT PRIMARY KEY,
+                                    ID INT PRIMARY KEY IDENTITY(1,1),
                                     MidiSettingEffectID INT NOT NULL,
                                     EffectDetailsID INT NOT NULL,
                                     FOREIGN KEY (MidiSettingEffectID) REFERENCES MidiEffects(ID),
