@@ -1,6 +1,7 @@
 CREATE PROCEDURE spEffectDetails_CreateEffectDetail
     @Name VARCHAR(255),
-    @Description VARCHAR(MAX)
+    @Description VARCHAR(MAX),
+    @EffectDetailID INT OUTPUT
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -12,5 +13,7 @@ BEGIN
 
     INSERT INTO EffectDetails (Name, Description)
     VALUES (@Name, @Description);
+    
+    SELECT @EffectDetailID = SCOPE_IDENTITY();
 END
 GO

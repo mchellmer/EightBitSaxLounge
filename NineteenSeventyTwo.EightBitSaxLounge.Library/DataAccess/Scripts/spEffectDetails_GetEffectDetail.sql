@@ -1,5 +1,6 @@
 CREATE PROCEDURE spEffectDetails_GetEffectDetail
-    @Name VARCHAR(255)
+    @Name VARCHAR(255),
+    @NewEffectDetailID INT OUTPUT
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -9,6 +10,6 @@ BEGIN
             RAISERROR ('Name cannot be NULL', 16, 1);
         END
 
-    SELECT ID FROM EffectDetails WHERE Name = @Name;
+    SELECT @NewEffectDetailID = ID FROM EffectDetails WHERE Name = @Name;
 END
 GO
