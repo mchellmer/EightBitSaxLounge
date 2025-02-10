@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NineteenSeventyTwo.EightBit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NineteenSeventyTwo.EightBitSaxLounge.TestApp", "NineteenSeventyTwo.EightBitSaxLounge.TestApp\NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj", "{653C596F-7E51-4C69-8DEB-91604561E152}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NineteenSeventyTwo.EightBitSaxLounge.DataManagerApp", "NineteenSeventyTwo.EightBitSaxLounge.DataManagerApp\NineteenSeventyTwo.EightBitSaxLounge.DataManagerApp.csproj", "{23520C0E-05AD-4FBA-8658-09105BA7FA9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{653C596F-7E51-4C69-8DEB-91604561E152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{653C596F-7E51-4C69-8DEB-91604561E152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{653C596F-7E51-4C69-8DEB-91604561E152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23520C0E-05AD-4FBA-8658-09105BA7FA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23520C0E-05AD-4FBA-8658-09105BA7FA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23520C0E-05AD-4FBA-8658-09105BA7FA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23520C0E-05AD-4FBA-8658-09105BA7FA9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
