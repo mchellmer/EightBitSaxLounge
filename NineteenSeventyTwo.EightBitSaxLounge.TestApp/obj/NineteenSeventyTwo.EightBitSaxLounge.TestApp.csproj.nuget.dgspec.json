@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.TestApp\\NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj": {}
+    "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.TestApp/NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj": {
+    "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
+        "projectUniqueName": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
         "projectName": "NineteenSeventyTwo.EightBitSaxLounge.Library",
-        "projectPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
-        "packagesPath": "C:\\Users\\mchel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\obj\\",
+        "projectPath": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
+        "packagesPath": "/Users/markhellmer/.nuget/packages/",
+        "outputPath": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mchel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/markhellmer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -86,10 +80,6 @@
             {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -97,40 +87,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\mchel\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/markhellmer/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.TestApp\\NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj": {
+    "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.TestApp/NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.TestApp\\NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj",
+        "projectUniqueName": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.TestApp/NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj",
         "projectName": "NineteenSeventyTwo.EightBitSaxLounge.TestApp",
-        "projectPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.TestApp\\NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj",
-        "packagesPath": "C:\\Users\\mchel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.TestApp\\obj\\",
+        "projectPath": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.TestApp/NineteenSeventyTwo.EightBitSaxLounge.TestApp.csproj",
+        "packagesPath": "/Users/markhellmer/.nuget/packages/",
+        "outputPath": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.TestApp/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mchel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/markhellmer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj": {
-                "projectPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj"
+              "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj": {
+                "projectPath": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj"
               }
             }
           }
@@ -167,15 +151,11 @@
               "version": "[8.0.11, 8.0.11]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
               "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
               "version": "[8.0.11, 8.0.11]"
             }
           ],
@@ -184,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\mchel\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/markhellmer/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
