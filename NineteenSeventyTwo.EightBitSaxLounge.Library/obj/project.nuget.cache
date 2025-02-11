@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "mgBULEbZ5ik=",
+  "dgSpecHash": "Nl2dcKJuKkQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
+  "expectedPackageFiles": [
+    "/Users/markhellmer/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/markhellmer/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

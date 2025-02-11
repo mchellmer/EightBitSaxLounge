@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj": {}
+    "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj": {
+    "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
+        "projectUniqueName": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
         "projectName": "NineteenSeventyTwo.EightBitSaxLounge.Library",
-        "projectPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
-        "packagesPath": "C:\\Users\\mchel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mchel\\RiderProjects\\EightBitSaxLounge\\EightBitSaxLounge\\NineteenSeventyTwo.EightBitSaxLounge.Library\\obj\\",
+        "projectPath": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/NineteenSeventyTwo.EightBitSaxLounge.Library.csproj",
+        "packagesPath": "/Users/markhellmer/.nuget/packages/",
+        "outputPath": "/Users/markhellmer/RiderProjects/EightBitSaxLounge/NineteenSeventyTwo.EightBitSaxLounge.Library/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\mchel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/markhellmer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,8 +36,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -59,12 +54,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\mchel\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/markhellmer/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
