@@ -7,6 +7,8 @@ namespace NineteenSeventyTwo.EightBitSaxLounge.Library.DataAccess.Scripts;
 /// </summary>
 public interface IEffectsMidiData
 {
+    Task<EffectsLoop> CreateEffectsLoopAsync(EffectsLoop effectsLoop);
+    
     /// <summary>
     /// Get <see cref="Effect"/> by name.
     /// </summary>
