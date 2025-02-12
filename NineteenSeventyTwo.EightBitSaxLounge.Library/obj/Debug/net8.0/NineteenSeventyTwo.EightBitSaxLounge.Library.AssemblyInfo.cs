@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NineteenSeventyTwo.EightBitSaxLounge.Library")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01055ec4a8bef96aed628c188f44b30c4872bbf4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04fff748815cead34903bfab86323f7b6de367de")]
 [assembly: System.Reflection.AssemblyProductAttribute("NineteenSeventyTwo.EightBitSaxLounge.Library")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NineteenSeventyTwo.EightBitSaxLounge.Library")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
