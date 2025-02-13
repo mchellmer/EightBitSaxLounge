@@ -12,5 +12,7 @@ BEGIN
 
     INSERT INTO EffectsLoops (Name, Description)
     VALUES (@Name, @Description);
+    
+    SELECT * FROM EffectsLoops WHERE Id = SCOPE_IDENTITY();
 END
 GO

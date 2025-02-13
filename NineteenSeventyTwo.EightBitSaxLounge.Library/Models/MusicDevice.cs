@@ -5,6 +5,13 @@ namespace NineteenSeventyTwo.EightBitSaxLounge.Library.Models;
 /// </summary>
 public class MusicDevice
 {
-    public string Name { get; set; }
-    public string Description { get; set; }
+    /// <summary>
+    /// The unique identifier for the music device.
+    /// </summary>
+    public required string Name { get; set; }
+    
+    /// <summary>
+    /// The description of the music device.
+    /// </summary>
+    public required string Description { get; set; }
 }

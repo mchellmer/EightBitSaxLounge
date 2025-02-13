@@ -13,7 +13,8 @@ var effectsLoopsToSeed = root.GetSection("SeedDataEffectsLoops").GetChildren();
 foreach (var effectsLoop in effectsLoopsToSeed)
 {
     Console.WriteLine($"Effects loop: {effectsLoop["Name"]}. Adding to database.");
-    
+    // Create effects loop - provide name and description
+    IEffectsLoopData effectsLoopData = new EffectsLoopData(new SqlDataAccess());
 
     var devices = effectsLoop.GetSection("Devices").GetChildren();
 
